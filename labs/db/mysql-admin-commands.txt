@@ -1,0 +1,35 @@
+#Start DB Server
+--run in background
+%MYSQL_HOME%\bin\mysqld --defaults-file=<defaults-file-path>
+mysqld --defaults-file="C:\Program Files\MySQL\mysql-8.0.30\my.ini"
+
+"C:\Program Files\MySQL\MySQL Server 8.0.30\bin\mysqld.exe" --defaults-file="C:\Program Files\MySQL\MySQL Server 8.0.30\my.ini"
+
+--run in console
+%MYSQL_HOME%\bin\mysqld --defaults-file=<defaults-file-path> --console
+
+"C:\Program Files\MySQL\MySQL Server 8.0.30\bin\mysqld.exe" --defaults-file="C:\Program Files\MySQL\MySQL Server 8.0.30\my.ini" --console
+
+#Stop DB Server
+%MYSQL_HOME%\bin\mysqladmin -u <username> -p <password> shutdown
+mysqladmin -u root -p shutdown
+
+#Connect via client
+%MYSQL_HOME%\bin\mysql -u <username> -p
+%MYSQL_HOME%\bin\mysql -h <hostname> -u <username> -p
+Enter password in the prompt: 
+
+--Admin commands
+connect <dbname> <hostname/ip>;
+show databases;
+show schemas;
+show tables;
+use <databasename>;
+show columns from <tablename>;
+show indexes from <tablename>;
+
+#Database backup syntax
+mysqldump [database_name] > [output_file_path].sql
+
+#Restore database backup
+mysql < [backup_file_path].sql

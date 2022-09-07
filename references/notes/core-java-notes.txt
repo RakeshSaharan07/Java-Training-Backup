@@ -1,0 +1,175 @@
+History
+	- project started on 1991
+	- James Gosling, Mike Sheridan, Patrick Naughton
+	- v1.0 -> 1996
+	- 2006/07 -> JVM -> FOSS (Free & Open Source Software)
+	- 2009/10 -> Oracle acquired Sun Microsystems and become owner of Java
+	- latest version 18
+	
+Design Goals
+	- simple, object oriented, familiar
+	- robust and secure
+	- architectural neutral and portable
+	- high performance (JIT)
+	- interpreted, threaded and dynamic
+	
+Release
+	- v1.0 -> 1996
+	- v1.1 -> 1997
+	- v1.2 -> 1998	=> J2SE, J2EE, J2ME
+	- v1.3 -> 2000
+	- v1.4 -> 2002
+	- v5.0 -> 2004	=> JSE, JEE, JME
+	- v6.0 -> 2006
+	- v7.0 -> 2011
+	- v8.0 -> 2014 (LTS) => OOP + FP (Lambda Expr + Stream API)
+	- v9.0 -> 2017
+	- v10  -> 2018(Mar)
+	- v11  -> 2018(Sep) (LTS)
+	- v12  -> 2019(Mar)
+	- v13  -> 2019(Sep)
+	- v14  -> 2020(Mar)
+	- v15  -> 2020(Sep)
+	- v16  -> 2021(Mar)
+	- v17  -> 2021(Sep) (LTS)
+	- v18  -> 2022(Mar)
+	
+JDK vs JRE vs JVM - client / server
+
+Java Editions
+	- Java SE (Standard Edition)
+	- Java EE (Enterprise Edition)
+	- Java ME (Micro Edition)
+	
+Language Constructs
+	- Data Types
+		- byte	(1 byte)
+		- short	(2 bytes)
+		- int	(4 bytes)
+		- long	(8 bytes)		
+		- float	(4 bytes)
+		- double (8 bytes)		
+		- boolean (1 byte)		
+		- char	(1 bytes)
+			
+		- string
+		
+		
+	- Variables
+		- Primitive - int, float, double, char, boolean, etc...
+		- Non-Primitive (Reference) - String, Array, Object
+		
+	- Constants
+		- final int ID;
+		
+	- Operators
+		- Arithmetic Operators
+		- Relational Operaytors
+		- Bitwise Operators
+		- Assignment Operators
+		- Conditional Operators 
+		- instanceof operator
+		
+	- Expressions, Statements, Blocks
+		- statements should end with semicolon ;
+		- blocks will be created with set of {}
+		
+	- Control Flow Statements
+		- IF ELSE
+		- Switch
+		
+	- Loop Statements
+		- while
+		- do...while
+		- for
+		- foreach
+		
+		while(true) {
+		}
+		
+		for(int i =0; i < 10; i++) {}
+		
+		for(;;){}
+		
+		for(String item: items) {}
+		
+	- Branching Statements
+	- Naming Conventions
+		- starts with $, _ and alphabets
+		- can contain numbers
+		
+	- Comments
+		- single line => //
+		- multi line => /* */
+		- class comment => /** */
+		
+	- Arrays
+		- int[] ids;
+		- int ids[];
+		
+		- int[] ids = {10,20,30}
+		
+		- String[] ids = new String[10];
+			ids[0] = 10;
+			ids[1] = 20;
+			ids[2] = 30;
+		
+	- Strings
+		- String name = new String("HomeCredit");
+		- String company = new String("HomeCredit")
+		
+		- String name = "HomeCredit" + "Inc"
+		- String company = "HomeCredit"
+		
+		- String Buffer vs String Builder
+		
+		- StringBuffer name = new StringBuffer("HomeCredit")
+		name.toString()
+		
+		- company = new StringBuffer("HomeCredit")
+	
+
+Object Oriented Programming
+	- Class
+		- Template or Blueprint
+		
+	- Object
+		- Instance of a class
+		
+	- Abstraction
+		- showing up only essentials details
+		- abstract class
+		- can't instantiate
+		- extending class should provide implementation for all abstract methods
+	
+	- Encapsulation
+		- data hiding
+		- access modifiers
+		- default, private, protected, public
+		
+	- Inheritance
+		- acquiring/inheriting state and behavior from parent class
+		- multi level inheritance supported
+		- using extends
+		- multiple inheritance is not supported due to ambiguity during run time
+		- with interfaces can support multiple inheritance
+		
+	- Polymorphism
+		- ability to take multiple forms
+		- overloading   - compile time (static) polymorphism
+		- overriding	- runtime polymorphism
+	
+	- Interface
+		- contract b/w class and outside world
+		- contain only abstract methods
+		- constants
+		- using implements
+		- marker interfaces - no method declarations
+		
+	- Object
+		- base/root class
+		- hashCode()
+		- equals()
+		- toString()
+		
+Reference: https://docs.oracle.com/javase/tutorial/			

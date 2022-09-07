@@ -1,0 +1,7 @@
+db:
+    hostname: localhost
+    port: 3306
+    dbname: jdbctraining
+    username: training1
+    password: training
+

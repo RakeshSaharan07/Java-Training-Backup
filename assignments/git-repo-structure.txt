@@ -1,0 +1,44 @@
+homecredit_javabootcamp
+	|
+	|____	labs
+			|
+			|__java
+					|
+					|___ core-java-labs
+					|
+					|___ adv-java-labs
+	|
+	|____ 	assignments
+				|
+				|__java
+					|
+					|___ core-java-assignments
+					|
+					|___ adv-java-assignments
+					|
+					|___ bankingapp-with-arrays
+					|
+					|___ bankingapp-with-collection
+					|
+					|___ bankingapp-with-stats
+					|
+					|___ bankingapp-with-impexp
+					|
+					|___ bankingapp-with-threading					
+					|
+					|___ bankingapp-with-jdbc
+					|
+					|___ bankingapp-with-java8
+				|
+				|__spring					
+					|
+					|___ bankingapp-with-spring					
+
+				|
+				|__sboot						
+					|
+					|___ bankingapp-with-boot
+					|
+					|___ bankingapp-with-rest					
+					
+						

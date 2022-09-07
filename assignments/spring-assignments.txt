@@ -1,0 +1,20 @@
+[SPRING CORE]
+==============
+ASSIGNMENT 1: Migrate Java Console based Account Management Application to Spring Console based Banking Application with same functionality using XML based configuration
+ASSIGNMENT 2: Enhance Spring Console based Account Management Application to use Annotation Based Configuration
+ASSIGNMENT 3: Enhance Spring Console based Account Management Application to use Java Based Configuration
+
+[SPRING BOOT]
+==============
+ASSIGNMENT 1: Migrate Spring Console based Account Management Application to Spring Boot Console based Banking Application with same functionality using Java based configuration
+
+
+[SPRING REST]
+==============
+ASSIGNMENT 1: Develop Banking REST API to perform CRUD operations with validation, content negotiation and exception handling 
+
+[SPRING Data]
+==============
+ASSIGNMENT 1: Enhance Banking REST API to persist data in database using JDBC Template
+ASSIGNMENT 2: Enhance Banking REST API to perform CRUD operations with validation, content negotiation and exception handling with Spring Data JPA integration
+

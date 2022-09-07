@@ -1,0 +1,105 @@
+
+Banking App
+===========
+
+Spring Boot + REST + Validation + Spring Data JPA
+
+REST API
+	
+	Account Service [account-service]
+	GET 	/accounts
+	GET		/accounts/{id}
+	POST	/accounts
+	PUT		/accounts/{id}
+	DELETE	/accounts/{id}
+	
+	Transaction Service [transaction-service]
+	GET 	/transactions
+	GET		/transactions/{id}
+	POST	/transactions
+	PUT		/transactions/{id}
+	DELETE	/transactions/{id}
+	
+	Fund Transfer Service	[fund-transfer-service]
+	POST 	/fundTransfers
+
+	Account
+		int id
+		String name
+		String type
+		String status
+		double balance
+		LocalDate openDate
+		
+	{
+		"name": "xyz",
+		"type": "Savings|Current|Loan",
+		"status": "Pending|Active|Closed"
+	}
+		
+	Transaction
+		int id
+		String type
+		String description
+		double amount
+		Account account
+		LocalTime transactionTime
+		
+	{
+		"type": "Credit|Debit",
+		"description": "School Fee"
+		"amount": 50000,
+		"accountId": 100
+	}
+	
+	
+	Fund Transfers
+	
+	{
+		"sourceAccountId": 100,
+		"targetAccoundId": 200
+		"amount": 50000,
+		"description": "School Fee"
+	}	
+	
+Package
+=======
+
+com
+  |
+  |___ homecredit
+          |
+		  |______ bankingapp
+					|
+					|_____ AccountServiceMain|TransactionServiceMain|FundTransferServiceMain
+					
+					|
+					|______ service
+							|
+							|_____ AccountService
+							|
+							|_____ TransactionService
+							|
+							|_____ FundTransferService
+								
+					|
+					|_______ model
+							   |
+							   |____ Account
+							   |
+							   |____ Transaction							   
+					|
+					|_______ repository
+							  |
+							  |_____ AccountRepository
+							  |
+							  |_____ TransactionRepository
+					|
+					|_______ exception
+							  |
+							  |_____ AccountException
+							  |
+							  |_____ TransactionException							  
+					|
+					|_______ util	
+	
